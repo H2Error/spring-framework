@@ -120,6 +120,7 @@ public class GenericApplicationContext extends AbstractApplicationContext implem
 	 * @see #refresh
 	 */
 	public GenericApplicationContext() {
+		// context先调用此处的构造函数为上下文初始化BeanFactory，可以注册BeanDefinition
 		this.beanFactory = new DefaultListableBeanFactory();
 	}
 
